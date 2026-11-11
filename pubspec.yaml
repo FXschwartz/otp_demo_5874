@@ -1,0 +1,52 @@
+name: _
+publish_to: none
+
+environment:
+  sdk: '^3.12.2'
+
+workspace:
+  - otp_demo_client
+  - otp_demo_server
+  - otp_demo_flutter
+
+dependency_overrides:
+  # Patched copy of pinput 6.0.2: hidden EditableText font 1px -> 16px so iOS
+  # Safari does not zoom on tap. See README.md.
+  pinput:
+    path: vendor/pinput
+  serverpod:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod
+  serverpod_auth_core_client:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_core/serverpod_auth_core_client
+  serverpod_auth_core_flutter:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_core/serverpod_auth_core_flutter
+  serverpod_auth_core_server:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_core/serverpod_auth_core_server
+  serverpod_auth_idp_client:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_idp/serverpod_auth_idp_client
+  serverpod_auth_idp_flutter:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_idp/serverpod_auth_idp_flutter
+  serverpod_auth_idp_server:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/modules/serverpod_auth/serverpod_auth_idp/serverpod_auth_idp_server
+  serverpod_client:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_client
+  serverpod_cloud_storage:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/integrations/serverpod_cloud_storage
+  serverpod_cloud_storage_gcp:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/integrations/serverpod_cloud_storage_gcp
+  serverpod_cloud_storage_s3_compat:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/integrations/serverpod_cloud_storage_s3_compat
+  serverpod_database:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_database
+  serverpod_embedded_postgres:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_embedded_postgres
+  serverpod_flutter:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_flutter
+  serverpod_lints:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_lints
+  serverpod_serialization:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_serialization
+  serverpod_shared:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_shared
+  serverpod_test:
+    path: /Users/preston/projects/orca/workspaces/serverpod/its-virtually-impossible-to-create-an-account-on-2/packages/serverpod_test
